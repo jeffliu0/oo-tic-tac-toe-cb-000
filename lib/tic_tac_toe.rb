@@ -106,7 +106,7 @@ def won?(@board)
    return false
 end
 
-def full?(board)
+def full?
   if(board.size.times.select{|i| board[i] == "X" ||board[i] == "O" }.size == 9)
     return true
   else
