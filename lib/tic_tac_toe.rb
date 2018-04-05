@@ -88,7 +88,7 @@ def position_taken?(@board, index)
 end
 
 
-def won?(@board)
+def won?
 
    match = @board.size.times.select{|i| @board[i] == "X"}
    match2 = @board.size.times.select{|i| @board[i] == "O"}
