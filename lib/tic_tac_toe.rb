@@ -84,11 +84,11 @@ end
 
 # Helper Method
 def position_taken?(@board, index)
-  !(@board[index].nil? || board[index] == " ")
+  !(@board[index].nil? || @board[index] == " ")
 end
 
 
-def won?(board)
+def won?(@board)
 
    match = board.size.times.select{|i| board[i] == "X"}
    match2 = board.size.times.select{|i| board[i] == "O"}
