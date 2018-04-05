@@ -43,10 +43,10 @@ def input_to_index(input)
   return input.to_i - 1
 end
 
-def move(board, index, char = "X")
-  board[index] = char
+def move(@board, index, char = "X")
+  @board[index] = char
   #display_board(board)
-  return board
+  return @board
 end
 
 def turn(board)
