@@ -54,7 +54,7 @@ def turn
   input = gets.strip
   converted_input = input_to_index(input)
 
-  until valid_move?(board, converted_input) == true do
+  until valid_move?(@board, converted_input) == true do
     puts "Wrong move. Please pick the right move."
     input = gets.strip
     converted_input = input_to_index(input)
