@@ -19,7 +19,7 @@ def display_board
 end
 
 def valid_move?(index)
-  if position_taken?(@board, index)
+  if position_taken?(index)
     return false
   elsif !index.between?(0,8)
     return false
