@@ -1,21 +1,21 @@
 class TicTacToe
 
-WIN_COMBINATIONS = [[0,1,2], [3,4,5], [6,7,8], [0,4,8],
-[2,4,6], [0,3,6], [1,4,7], [2,5,8]]
 
 def initialize
   @board = [" ", " ", " ", " ", " ", " ",
      " ", " ", " "]
    end
 
+   WIN_COMBINATIONS = [[0,1,2], [3,4,5], [6,7,8], [0,4,8],
+   [2,4,6], [0,3,6], [1,4,7], [2,5,8]]
 # Define display_board that accepts a board and prints
 # out the current state.
-def display_board(arrays)
-  puts " #{arrays[0]} | #{arrays[1]} | #{arrays[2]} "
+def display_board(@board)
+  puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
   puts "-----------"
-  puts " #{arrays[3]} | #{arrays[4]} | #{arrays[5]} "
+  puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
   puts "-----------"
-  puts " #{arrays[6]} | #{arrays[7]} | #{arrays[8]} "
+  puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
 end
 
 def valid_move?(board, index)
