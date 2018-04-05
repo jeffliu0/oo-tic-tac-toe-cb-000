@@ -49,7 +49,7 @@ def move(@board, index, char = "X")
   return @board
 end
 
-def turn(board)
+def turn
   puts "Please enter 1-9:"
   input = gets.strip
   converted_input = input_to_index(input)
