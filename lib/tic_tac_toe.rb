@@ -61,7 +61,6 @@ class TicTacToe
     end
 
     move(converted_input, current_player(@board))
-    end
 
     display_board
   end
