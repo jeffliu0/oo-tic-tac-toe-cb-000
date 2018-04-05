@@ -117,36 +117,36 @@ end
 def draw?
   if full?(@board) && !won?(b@board)
     return true
-  elsif !won?(board) && !full?(board)
+  elsif !won?(@board) && !full?(@board)
     return false
-  elsif won?(board)
+  elsif won?(@board)
     return false
   end
 end
 
-def over?(board)
-  if draw?(board) || won?(board) || full?(board)
+def over?
+  if draw?(@board) || won?(@board) || full?(@board)
     return true
   else
     return false
   end
 end
 
-def winner(board)
-  if won?(board) == false
+def winner
+  if won?(@board) == false
     return nil
   end
-  return board[won?(board)[0]]
+  return @board[won?(@board)[0]]
 end
 
-def play(board)
-  until over?(board)
-    turn(board)
+def play
+  until over?(@board)
+    turn(@board)
   end
 
-  if won?(board)
+  if won?(@board)
     puts "Congratulations #{winner(board)}!"
-  elsif draw?(board)
+  elsif draw?(@board)
     puts "Cat's Game!"
   end
 end
