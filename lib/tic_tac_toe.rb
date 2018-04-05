@@ -66,10 +66,10 @@ def turn
   display_board(@board)
 end
 
-def turn_count(board)
+def turn_count
   counter = 0
 
-  board.each do |player|
+  @board.each do |player|
     if player.strip != ""
       counter += 1
     end
