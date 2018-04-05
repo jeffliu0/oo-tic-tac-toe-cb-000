@@ -78,8 +78,8 @@ def turn_count
   return counter
 end
 
-def current_player(board)
-  return turn_count(board).even? ? "X" : "O"
+def current_player
+  return turn_count(@board).even? ? "X" : "O"
 end
 
 # Helper Method
