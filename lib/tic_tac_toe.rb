@@ -10,7 +10,7 @@ def initialize
    [2,4,6], [0,3,6], [1,4,7], [2,5,8]]
 # Define display_board that accepts a board and prints
 # out the current state.
-def display_board(@board)
+def display_board
   puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
   puts "-----------"
   puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
