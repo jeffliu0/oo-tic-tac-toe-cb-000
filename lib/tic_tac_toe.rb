@@ -4,7 +4,7 @@ class TicTacToe
   def initialize
     @board = [" ", " ", " ", " ", " ", " ",
        " ", " ", " "]
-       display_board
+    display_board
   end
 
   WIN_COMBINATIONS = [[0,1,2], [3,4,5], [6,7,8], [0,4,8],
@@ -61,7 +61,7 @@ class TicTacToe
       converted_input = input_to_index(input)
     end
 
-    move(converted_input, current_player(@board))
+    move(converted_input, current_player)
 
     display_board
   end
