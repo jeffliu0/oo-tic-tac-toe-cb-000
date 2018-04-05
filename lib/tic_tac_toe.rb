@@ -107,14 +107,14 @@ def won?(@board)
 end
 
 def full?
-  if(@board.size.times.select{|i| @board[i] == "X" ||board[i] == "O" }.size == 9)
+  if(@board.size.times.select{|i| @board[i] == "X" ||@board[i] == "O" }.size == 9)
     return true
   else
     return false
   end
 end
 
-def draw?(board)
+def draw?
   if full?(board) && !won?(board)
     return true
   elsif !won?(board) && !full?(board)
